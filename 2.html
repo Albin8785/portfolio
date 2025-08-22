@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing and Promo project | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Dark Theme Project Page */
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #eee;
+    }
+
+    header {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+
+    header p {
+      color: #ccc;
+      font-size: 1.1rem;
+    }
+
+    .project-container {
+      max-width: 900px;
+      margin: 20px auto 60px;
+      padding: 40px 30px;
+      background: #1b1b1b;
+      border-radius: 16px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.6);
+    }
+
+    /*.project-image {
+      border-radius: 100px;
+      overflow: hidden;
+      margin: 30px 0;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+    }
+
+    .project-image img {
+      width: 100%;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    
+
+    .project-image img:hover {
+      transform: scale(1.04);
+    }*/
+
+    h2 {
+      font-size: 1.6rem;
+      margin-top: 25px;
+      color: #fff;
+      border-left: 4px solid #ff4db8; /* 🎵 Pink accent for music project */
+      padding-left: 10px;
+    }
+
+    ul {
+      margin: 15px 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: #ddd;
+    }
+
+    .btn-back {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 22px;
+      background: #ff4db8;
+      color: #111;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-back:hover {
+      background: #e63d9c;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pricing and Promo omptimization</h1>
+    <p>Data analysis for an audio retailer.</p>
+  </header>
+
+  <div class="project-container">
+    <h2>Objective</h2>
+    <p>
+      The goal of this project was to analyze historical sales data and build a data-driven pricing and promotion optimization system.
+      Identify how pricing affects demand (price elasticity).
+      Measure the effectiveness of different promotions.
+      Recommend optimal price points and promotional strategies to maximize revenue and profit.
+    </p>
+
+    <h2>Tools</h2>
+    <ul>
+      <li>SQL → Data extraction, cleaning, aggregations.</li>
+      <li>Python (pandas, numpy, scikit-learn, statsmodels, matplotlib) → Data analysis, modeling, and visualization.</li>
+      <li>Jupyter Notebook → End-to-end workflow demonstration.</li>
+    </ul>
+
+    <!--<div class="project-image">
+      <img src="music.jpg" alt="Music editing preview">
+    </div>-->
+
+    <h2>Workflow</h2>
+    <ul>
+      <li>
+ Data Preparation (SQL)
+
+Extracted and joined data from multiple tables (sales + products + promotions).
+
+Calculated KPIs: revenue, margin, average selling price, promo impact.</li>
+<li>  Exploratory Data Analysis (Python)
+
+Visualized sales trends across price ranges and promo periods.
+
+Identified products highly sensitive to price changes.</li>
+<li> Price Elasticity Modeling (Python)
+
+Built a regression model to estimate demand sensitivity to price and promotions.
+The coefficients revealed:
+
+Price had a negative effect on demand (expected).
+
+Promotions significantly increased sales volumes.</li>
+
+<li> Optimization Simulation
+
+Simulated revenue/profit at different price points.
+
+Identified the optimal price that maximized profit (not just sales).
+Visualization showed the profit-maximizing price.</li>
+
+<li> Promotion Effectiveness Analysis
+
+Compared promo types (Discount vs BOGO vs Coupon).
+
+Found Discounts gave highest sales lift but reduced margins, while Coupons balanced growth and profitability.
+</li>
+    </ul>
+
+    <a href="index.html#work" class="btn-back">← Back to Portfolio</a>
+  </div>
+</body>
+</html>

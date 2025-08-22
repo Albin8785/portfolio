@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predictive Risk Modelling for CCS | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Dark Theme Project Page */
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #eee;
+    }
+
+    header {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+
+    header p {
+      color: #ccc;
+      font-size: 1.1rem;
+    }
+
+    .project-container {
+      max-width: 900px;
+      margin: 20px auto 60px;
+      padding: 40px 30px;
+      background: #1b1b1b;
+      border-radius: 16px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.6);
+    }
+
+    .project-image {
+      border-radius: 12px;
+      overflow: hidden;
+      margin: 30px 0;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+    }
+
+    .project-image img {
+      width: 100%;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .project-image img:hover {
+      transform: scale(1.04);
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-top: 25px;
+      color: #fff;
+      border-left: 4px solid #4db6ff;
+      padding-left: 10px;
+    }
+
+    ul {
+      margin: 15px 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: #ddd;
+    }
+
+    .btn-back {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 22px;
+      background: #4db6ff;
+      color: #111;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-back:hover {
+      background: #339ce6;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Predictive Risk Modelling for CCS</h1>
+    <p>Machine Learning approach for safe and optimal CO₂ storage</p>
+  </header>
+
+  <div class="project-container">
+    <h2>Overview</h2>
+    <p>
+      This project leverages machine learning models to predict seismic risk during Carbon Capture 
+      and Storage (CCS) operations. The aim is to ensure safety, prevent micro-seismic events, 
+      and optimize CO₂ injection strategies for long-term sustainability.
+    </p>
+
+    <h2>Tech Stack</h2>
+    <ul>
+      <li>Python (pandas, scikit-learn)</li>
+      <li>SQL for structured data management</li>
+      <li>Data visualization with matplotlib</li>
+    </ul>
+
+    <!--<div class="project-image">
+      <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop" alt="ML project preview">
+    </div>-->
+
+    <h2>Workflow</h2>
+    <ul>
+      <li>Data Collection & Storage
+
+Gather geological, geophysical, and injection operation data (e.g., pressure, depth, temperature, rock properties).
+
+Store structured datasets in SQL database for efficient querying and management.</li>
+      <li>Data Extraction & Preprocessing
+
+Use SQL queries to filter, clean, and aggregate data.
+
+Load data into Python (pandas) for preprocessing.
+
+Handle missing values, normalize features, and engineer new features (e.g., pressure gradients, CO₂ saturation levels).</li>
+      <li>Exploratory Data Analysis (EDA)
+
+Visualize key trends using matplotlib (e.g., injection rate vs. seismic events).
+
+Identify correlations (e.g., pressure buildup leading to micro-seismic activity).
+
+Perform statistical checks to validate data consistency.</li>
+      <li>Model Development
+
+Split dataset into training & testing sets.
+
+Apply machine learning models (e.g., Logistic Regression, Random Forest, Gradient Boosting).
+
+Target variable → Probability of seismic event occurrence.</li>
+<li>Model Evaluation
+
+Use metrics: Accuracy, Precision, Recall, ROC-AUC.
+
+Cross-validate models to prevent overfitting.
+
+Select the best-performing model for deployment.</li>
+<li>Optimization & Insights
+
+Quantify price elasticity of risk → how CO₂ injection rates affect seismic probability.
+
+Recommend optimal injection strategies that balance storage capacity and safety.</li>
+    </ul>
+
+    <a href="index.html#work" class="btn-back">← Back to Portfolio</a>
+  </div>
+</body>
+</html>
